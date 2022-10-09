@@ -47,6 +47,10 @@ namespace WeatherApp
             this.picIcon = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TempF = new System.Windows.Forms.Label();
+            this.TempC = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +94,7 @@ namespace WeatherApp
             this.labCondition.BackColor = System.Drawing.Color.Transparent;
             this.labCondition.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCondition.ForeColor = System.Drawing.Color.White;
-            this.labCondition.Location = new System.Drawing.Point(98, 200);
+            this.labCondition.Location = new System.Drawing.Point(98, 292);
             this.labCondition.Name = "labCondition";
             this.labCondition.Size = new System.Drawing.Size(90, 22);
             this.labCondition.TabIndex = 3;
@@ -102,7 +106,7 @@ namespace WeatherApp
             this.labDetails.BackColor = System.Drawing.Color.Transparent;
             this.labDetails.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labDetails.ForeColor = System.Drawing.Color.White;
-            this.labDetails.Location = new System.Drawing.Point(98, 245);
+            this.labDetails.Location = new System.Drawing.Point(98, 337);
             this.labDetails.Name = "labDetails";
             this.labDetails.Size = new System.Drawing.Size(68, 22);
             this.labDetails.TabIndex = 4;
@@ -114,7 +118,7 @@ namespace WeatherApp
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(98, 289);
+            this.label10.Location = new System.Drawing.Point(428, 292);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(79, 22);
             this.label10.TabIndex = 5;
@@ -126,7 +130,7 @@ namespace WeatherApp
             this.labSunrise.BackColor = System.Drawing.Color.Transparent;
             this.labSunrise.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labSunrise.ForeColor = System.Drawing.Color.White;
-            this.labSunrise.Location = new System.Drawing.Point(183, 289);
+            this.labSunrise.Location = new System.Drawing.Point(513, 292);
             this.labSunrise.Name = "labSunrise";
             this.labSunrise.Size = new System.Drawing.Size(41, 22);
             this.labSunrise.TabIndex = 6;
@@ -138,7 +142,7 @@ namespace WeatherApp
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(98, 335);
+            this.label20.Location = new System.Drawing.Point(428, 338);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(74, 22);
             this.label20.TabIndex = 7;
@@ -150,7 +154,7 @@ namespace WeatherApp
             this.labSunset.BackColor = System.Drawing.Color.Transparent;
             this.labSunset.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labSunset.ForeColor = System.Drawing.Color.White;
-            this.labSunset.Location = new System.Drawing.Point(183, 335);
+            this.labSunset.Location = new System.Drawing.Point(513, 338);
             this.labSunset.Name = "labSunset";
             this.labSunset.Size = new System.Drawing.Size(41, 22);
             this.labSunset.TabIndex = 8;
@@ -238,6 +242,54 @@ namespace WeatherApp
             this.label3.TabIndex = 16;
             this.label3.Text = "Enter any city to get the forcast!";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(98, 245);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(235, 22);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Temperature in Fahrenheit:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(98, 200);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(209, 22);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Temperature in Celcius:";
+            // 
+            // TempF
+            // 
+            this.TempF.AutoSize = true;
+            this.TempF.BackColor = System.Drawing.Color.Transparent;
+            this.TempF.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TempF.ForeColor = System.Drawing.Color.White;
+            this.TempF.Location = new System.Drawing.Point(336, 246);
+            this.TempF.Name = "TempF";
+            this.TempF.Size = new System.Drawing.Size(41, 22);
+            this.TempF.TabIndex = 20;
+            this.TempF.Text = "N/A";
+            // 
+            // TempC
+            // 
+            this.TempC.AutoSize = true;
+            this.TempC.BackColor = System.Drawing.Color.Transparent;
+            this.TempC.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TempC.ForeColor = System.Drawing.Color.White;
+            this.TempC.Location = new System.Drawing.Point(336, 200);
+            this.TempC.Name = "TempC";
+            this.TempC.Size = new System.Drawing.Size(41, 22);
+            this.TempC.TabIndex = 19;
+            this.TempC.Text = "N/A";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,6 +297,10 @@ namespace WeatherApp
             this.BackColor = System.Drawing.Color.Blue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TempF);
+            this.Controls.Add(this.TempC);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.picIcon);
@@ -289,6 +345,10 @@ namespace WeatherApp
         private EventHandler label4_Click;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label TempF;
+        private System.Windows.Forms.Label TempC;
     }
 }
 

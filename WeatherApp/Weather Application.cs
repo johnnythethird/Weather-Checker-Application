@@ -31,6 +31,22 @@ namespace WeatherApp
         double lon;
         double lat;
 
+        double convertToC(double kelvin)
+        {
+            double celsius;
+
+            celsius = kelvin - 273;
+            return celsius;
+        }
+
+        double convertToF(double kelvin)
+        {
+            double fahrenheit;
+
+            fahrenheit = 1.8 * (kelvin - 273) + 32;
+            return fahrenheit;
+        }
+
         void getWeather()
         {
             using (WebClient web = new WebClient())
@@ -40,6 +56,10 @@ namespace WeatherApp
                 WeatherInfo.root Info = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
 
                 picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
+
+                TempC.Text = convertToC(Info.main.temp).ToString();
+                TempF.Text = convertToF(Info.main.temp).ToString();
+
                 labCondition.Text = Info.weather[0].main;
                 labDetails.Text = Info.weather[0].description;
 

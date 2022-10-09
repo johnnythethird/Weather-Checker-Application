@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeatherApp.exe" size="40960">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeatherApp.exe" size="42496">
       <assemblyIdentity name="WeatherApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Lf4Zs0Kbp/xUc8RdJGEKCdY5iEt/3GUksjlOxMjKSkU=</dsig:DigestValue>
+        <dsig:DigestValue>m9WdbocQGY/Dr7H+NRx3aR092lfh3ZB5KPKaL2excpk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
